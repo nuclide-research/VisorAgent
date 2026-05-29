@@ -3,7 +3,7 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/Nicholas-Kloster/VisorAgent/vectors"
+	"github.com/nuclide-research/VisorAgent/vectors"
 )
 
 func CmdList() {

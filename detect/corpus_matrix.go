@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/Nicholas-Kloster/VisorAgent/vectors"
+	"github.com/nuclide-research/VisorAgent/vectors"
 )
 
 func PrintCorpusMatrix(results []*vectors.CorpusCaseResult) {

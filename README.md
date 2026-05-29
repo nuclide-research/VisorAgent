@@ -1,15 +1,15 @@
 [![Claude Code Friendly](https://img.shields.io/badge/Claude_Code-Friendly-blueviolet?logo=anthropic&logoColor=white)](https://claude.ai/code)
-[![Go Report Card](https://goreportcard.com/badge/github.com/Nicholas-Kloster/VisorAgent)](https://goreportcard.com/report/github.com/Nicholas-Kloster/VisorAgent)
+[![Go Report Card](https://goreportcard.com/badge/github.com/nuclide-research/VisorAgent)](https://goreportcard.com/report/github.com/nuclide-research/VisorAgent)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ```
   Agentic LLM Injection Benchmark · VisorCorpus + VisorSD Integration
-  github.com/Nicholas-Kloster/VisorAgent · Nuclide Research
+  github.com/nuclide-research/VisorAgent · Nuclide Research
 ```
 
 **VisorAgent** is a Go-based injection benchmark for agentic LLM systems. It delivers adversarial prompts through real tool-use paths — `web_fetch`, `doc_retrieve`, `code_exec`, `email_send` — and scores whether the agent followed the injection or held its trust boundary. Pass/fail per signal, matrix at the end.
 
-Pairs with [VisorCorpus](https://github.com/Nicholas-Kloster/VisorCorpus) for adversarial payload generation and [VisorSD](https://github.com/Nicholas-Kloster/VisorSD) for live target discovery via Shodan.
+Pairs with [VisorCorpus](https://github.com/nuclide-research/VisorCorpus) for adversarial payload generation and [VisorSD](https://github.com/nuclide-research/VisorSD) for live target discovery via Shodan.
 
 ---
 
@@ -72,7 +72,7 @@ User asks agent to fetch + run an analytics script
 ## Build
 
 ```bash
-git clone https://github.com/Nicholas-Kloster/VisorAgent
+git clone https://github.com/nuclide-research/VisorAgent
 cd VisorAgent
 go build -o visoragent .
 ```
@@ -102,7 +102,7 @@ export ANTHROPIC_API_KEY=sk-ant-...
 
 ### Corpus mode (VisorCorpus integration)
 
-Generate adversarial variants with [VisorCorpus](https://github.com/Nicholas-Kloster/VisorCorpus) and run them through the delivery harness.
+Generate adversarial variants with [VisorCorpus](https://github.com/nuclide-research/VisorCorpus) and run them through the delivery harness.
 
 ```bash
 # Build a focused corpus
@@ -122,7 +122,7 @@ VisorCorpus cases are routed to the appropriate delivery vector by category:
 
 ### External target mode (VisorSD integration)
 
-Test exposed Ollama or OpenAI-compatible endpoints discovered by [VisorSD](https://github.com/Nicholas-Kloster/VisorSD).
+Test exposed Ollama or OpenAI-compatible endpoints discovered by [VisorSD](https://github.com/nuclide-research/VisorSD).
 
 ```bash
 # Discover exposed AI endpoints
@@ -216,7 +216,7 @@ VisorAgent   → delivers through tool-use paths, scores HIT/MISS per signal
 Coverage matrix → which endpoints broke, which vector class succeeded
 ```
 
-Pairs with [VisorHollow](https://github.com/Nicholas-Kloster/VisorHollow) for the host-level layer:
+Pairs with [VisorHollow](https://github.com/nuclide-research/VisorHollow) for the host-level layer:
 
 ```
 VisorAgent   → agent trust boundary (did injection reach code_exec?)
@@ -229,12 +229,12 @@ VisorHollow  → host detection (did EDR catch what code_exec ran?)
 
 | Tool | Role |
 |------|------|
-| [VisorSD](https://github.com/Nicholas-Kloster/VisorSD) | Shodan-based exposed AI/LLM infra scanner |
-| [VisorCorpus](https://github.com/Nicholas-Kloster/VisorCorpus) | Adversarial prompt corpus builder |
-| [VisorHollow](https://github.com/Nicholas-Kloster/VisorHollow) | Process injection detection benchmark |
-| [VisorGraph](https://github.com/Nicholas-Kloster/VisorGraph) | Seed-polymorphic recon graph engine |
-| [aimap](https://github.com/Nicholas-Kloster/aimap) | 36-service AI/ML infra fingerprinter |
-| [BARE](https://github.com/Nicholas-Kloster/BARE) | Semantic exploit matching |
+| [VisorSD](https://github.com/nuclide-research/VisorSD) | Shodan-based exposed AI/LLM infra scanner |
+| [VisorCorpus](https://github.com/nuclide-research/VisorCorpus) | Adversarial prompt corpus builder |
+| [VisorHollow](https://github.com/nuclide-research/VisorHollow) | Process injection detection benchmark |
+| [VisorGraph](https://github.com/nuclide-research/VisorGraph) | Seed-polymorphic recon graph engine |
+| [aimap](https://github.com/nuclide-research/aimap) | 36-service AI/ML infra fingerprinter |
+| [BARE](https://github.com/nuclide-research/BARE) | Semantic exploit matching |
 
 ---
 

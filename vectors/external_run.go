@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/Nicholas-Kloster/VisorAgent/corpus"
-	"github.com/Nicholas-Kloster/VisorAgent/target"
+	"github.com/nuclide-research/VisorAgent/corpus"
+	"github.com/nuclide-research/VisorAgent/target"
 )
 
 // ExternalCaseResult is the result for a corpus case run against an external endpoint.

@@ -1,3 +1,3 @@
-module github.com/Nicholas-Kloster/VisorAgent
+module github.com/nuclide-research/VisorAgent
 
 go 1.21

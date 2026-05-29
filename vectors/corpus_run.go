@@ -5,9 +5,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Nicholas-Kloster/VisorAgent/agent"
-	"github.com/Nicholas-Kloster/VisorAgent/corpus"
-	"github.com/Nicholas-Kloster/VisorAgent/server"
+	"github.com/nuclide-research/VisorAgent/agent"
+	"github.com/nuclide-research/VisorAgent/corpus"
+	"github.com/nuclide-research/VisorAgent/server"
 )
 
 // CorpusCaseResult is the result for a single AttackCase.

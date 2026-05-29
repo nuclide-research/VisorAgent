@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/Nicholas-Kloster/VisorAgent/cmd"
+	"github.com/nuclide-research/VisorAgent/cmd"
 )
 
 const banner = `
   VisorAgent · Agentic LLM Injection Benchmark
-  Nuclide Research · github.com/Nicholas-Kloster/VisorAgent
+  Nuclide Research · github.com/nuclide-research/VisorAgent
 `
 
 func main() {

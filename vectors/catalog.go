@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Nicholas-Kloster/VisorAgent/agent"
-	"github.com/Nicholas-Kloster/VisorAgent/server"
+	"github.com/nuclide-research/VisorAgent/agent"
+	"github.com/nuclide-research/VisorAgent/server"
 )
 
 //go:embed payload/report.html

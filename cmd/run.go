@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/Nicholas-Kloster/VisorAgent/corpus"
-	"github.com/Nicholas-Kloster/VisorAgent/detect"
-	"github.com/Nicholas-Kloster/VisorAgent/server"
-	"github.com/Nicholas-Kloster/VisorAgent/target"
-	"github.com/Nicholas-Kloster/VisorAgent/vectors"
+	"github.com/nuclide-research/VisorAgent/corpus"
+	"github.com/nuclide-research/VisorAgent/detect"
+	"github.com/nuclide-research/VisorAgent/server"
+	"github.com/nuclide-research/VisorAgent/target"
+	"github.com/nuclide-research/VisorAgent/vectors"
 )
 
 func CmdRun(attackerEmail, vectorID, corpusPath, targetURL, visorsdPath, model string) error {

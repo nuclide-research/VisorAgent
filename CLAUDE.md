@@ -2,7 +2,7 @@
 
 Go-based agentic LLM injection benchmark. Delivers adversarial prompts through real tool-use paths — `web_fetch`, `doc_retrieve`, `code_exec`, `email_send` — and measures whether the agent followed the injection or held its trust boundary. Pass/fail per signal, HIT/MISS matrix at the end.
 
-The adversarial-test execution layer on top of VisorCorpus's corpus generation. Pairs with [VisorCorpus](https://github.com/Nicholas-Kloster/VisorCorpus) for payload generation and [VisorSD](https://github.com/Nicholas-Kloster/VisorSD) for live target discovery.
+The adversarial-test execution layer on top of VisorCorpus's corpus generation. Pairs with [VisorCorpus](https://github.com/nuclide-research/VisorCorpus) for payload generation and [VisorSD](https://github.com/nuclide-research/VisorSD) for live target discovery.
 
 ## Language
 Go 1.21+ (single static binary, no CGO)
